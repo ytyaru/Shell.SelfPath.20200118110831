@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-Run() { "$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)/lib.sh"; }
+Run() { "$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd -P)/lib.sh"; }
 Load() {
-	. "$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)/lib.sh"
+	. "$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd -P)/lib.sh"
 	SelfPath
 }
 Run
